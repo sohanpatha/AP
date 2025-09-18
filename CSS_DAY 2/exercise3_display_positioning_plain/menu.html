@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 3 — Display & Positioning</title>
+  <style>
+    .vertical a {
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: #333;
+      border-bottom: 1px solid #eee;
+    }
+    .vertical a:hover {
+      background: #f0f0f0;
+    }
+
+    .horizontal a {
+      display: inline-block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: #333;
+      border-right: 1px solid #eee;
+    }
+    .horizontal a:last-child {
+      border-right: none;
+    }
+    .horizontal a:hover {
+      background: #f0f0f0;
+    }
+
+    header {
+      position: relative;
+      padding: 24px 0 24px 0;
+    }
+    .login-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #0078d4;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Exercise 3: Display & Positioning</h1>
+    <div class="login-btn">Login</div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Vertical Menu (Block Links)</h2>
+      <nav class="vertical">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </nav>
+    </section>
+
+    <section>
+      <h2>Horizontal Menu (Inline-Block Links)</h2>
+      <nav class="horizontal">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* Exercise 2 External CSS */
+
+/* Universal selector to set global font to Arial, sans-serif */
+* { font-family: Arial, sans-serif; }
+
+/* Type selector to color all h1 elements red */
+h1 { color: red; }
+
+/* Class selector .highlight with yellow background */
+.highlight { background: yellow; }
+
+/* ID selector #special with font-size 24px */
+#special { font-size: 24px; }

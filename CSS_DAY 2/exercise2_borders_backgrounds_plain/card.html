@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 2 — Borders & Backgrounds</title>
+ <style>
+.card {
+  width: 350px;
+  margin: 30px auto;
+  border-radius: 10px;
+  background: url('assets_user_photo.png') center;
+  background-size: cover;
+  box-shadow: rgba(0,0,0,15) 0px 5px 15px;
+  position: relative;
+}
+
+.card .overlay {
+  background: rgba(234, 227, 227, 0.85);
+  padding: 2rem 2rem;
+}
+
+.card .name {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.card .role {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #555;
+  font-weight: bold;
+}
+
+.card .bio {
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+}
+ </style>
+</head>
+<body>
+  <h1>Exercise 2: Profile Card</h1>
+
+  <!-- Card container to be styled by students -->
+  <article class="card">
+    <div class="overlay">
+      <h2 class="name">Student Name</h2>
+      <p class="role">Your Role</p>
+      <p class="bio">
+        Write a short two-line bio here. Then use CSS to add a rounded border,
+        apply a background image, and create a semi-transparent white overlay behind this text.
+      </p>
+    </div>
+  </article>
+
+  <!-- Hint (optional): The overlay can be a child element with a background like rgba(255,255,255,0.85). -->
+</body>
+</html>
